@@ -3,7 +3,7 @@
 Cuadernos Jupyter que usa el club "Glaciología y recursos hídricos" de Clubes de Ciencia Perú 2019.  
 
 Con estos cuadernos, utilizamos el modelo [OGGM-Edu](http://edu.oggm.org/en/latest/) para explorar el almacenamiento de agua en hielo glacial.  Específicamente, 
-* Cómo simulamos el crecimiento de un glaciar con este modelo?
+* Cómo simulamos el crecimiento y la evolución de un glaciar con este modelo?
 * Cuáles características del glaciar afectan al almacenamiento de hielo?
 * Cómo afecta el clima al almacenamiento de hielo?
 
@@ -18,4 +18,9 @@ También se puede acceder a los cuadernos sin registracion, en MyBinder:
 
 
 
-EN: A repository of Spanish-language Jupyter notebooks for use in Clubes de Ciencia Peru 2019.
+EN: A repository of Spanish-language Jupyter notebooks for use in Clubes de Ciencia Peru 2019.  The notebooks use the educational (OGGM-Edu)[http://edu.oggm.org/en/latest/] model to explore glacial water storage.  Particular focuses here are:
+* How do we simulate glacier growth and change over time with this model?
+* Which glacier characteristics determine how much ice a glacier stores?
+* How does climatic change affect glacial water storage?
+
+You can run the notebooks either on the OGGM Hub (orange button, for registered users) or on MyBinder (blue button).
