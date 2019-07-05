@@ -1,0 +1,24 @@
+*.py[cod]
+__pycache__
+
+# PyCharm stuffs
+.idea/
+
+
+# Notebook stuffs
+.ipynb_checkpoints
+*.nbgrader.log
+
+# Tests stuffs
+.pytest_cache
+
+# Packages
+*.egg
+*.egg-info
+eggs
+
+# specific
+*.cache
+*.lock
+*.DS_Store
+
