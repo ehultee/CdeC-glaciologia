@@ -18,7 +18,7 @@ También se puede acceder a los cuadernos sin registracion, en MyBinder:
 
 
 
-EN: A repository of Spanish-language Jupyter notebooks for use in Clubes de Ciencia Peru 2019.  The notebooks use the educational (OGGM-Edu)[http://edu.oggm.org/en/latest/] model to explore glacial water storage.  Particular focuses here are:
+EN: A repository of Spanish-language Jupyter notebooks for use in Clubes de Ciencia Peru 2019.  The notebooks use the educational [OGGM-Edu](http://edu.oggm.org/en/latest/) model to explore glacial water storage.  Particular focuses here are:
 * How do we simulate glacier growth and change over time with this model?
 * Which glacier characteristics determine how much ice a glacier stores?
 * How does climatic change affect glacial water storage?
