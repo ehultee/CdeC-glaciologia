@@ -41,6 +41,11 @@ def read_run_results(gdir, filesuffix=None):
     # Volume change
     delta_vol = np.append([0], ds.volume_m3.data[1:] - ds.volume_m3.data[0:-1])
     
+    if ds.calendar_month[0] == 10 and gdir.cenlat < 0:
+        # this is to cover up a bug in OGGM
+        _, m = utils.hydrodate_to_calendardate(ds.hydro_year.data, ds.hydro_month.data, start_month=4)
+        ds.calendar_month[:] = m
+    
     odf = pd.DataFrame()
     odf['length_m'] = ts
     odf['volume_m3'] = ds.volume_m3
