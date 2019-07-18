@@ -107,7 +107,7 @@ def plot_xz_bed(x, bed, ax=None, ylim=None):
         ylim = ax.get_ylim()
        
     ax.plot(x, bed, color='k', label='Bedrock', linestyle=':', linewidth=1.5)
-    ax.xlabel('Distance along glacier [km]')
-    ax.ylabel('Altitude [m]')
+    ax.set_xlabel('Distance along glacier [km]')
+    ax.set_ylabel('Altitude [m]')
     ax.set_ylim(ylim)
     ax.legend(loc='best', frameon=False)
