@@ -83,3 +83,31 @@ def read_climate_statistics(gdir):
     
     return odf
 
+def plot_xz_bed(x, bed, ax=None, ylim=None):
+    """This function implements a glacier bed, prepared axes and a legend in
+    altitude vs. distance along a glacier plot.  Based on function of the same 
+    name in OGGM-Edu, but adds explicit axes argument.
+    Parameters
+    ----------
+    x : ndarray
+        distance along glacier (all steps in km)
+    bed : ndarray
+        bed rock
+        
+    Parameters (Optional)
+    ----------
+    ax : matplotlib axes instance on which to plot
+        If None, calls plt.gca()
+    ylim : tuple, y-limits of plot
+        If None, calls ax.get_ylim()
+    """
+    if ax is None:
+        ax = plt.gca()
+    if ylim is None:
+        ylim = ax.get_ylim()
+       
+    ax.plot(x, bed, color='k', label='Bedrock', linestyle=':', linewidth=1.5)
+    ax.xlabel('Distance along glacier [km]')
+    ax.ylabel('Altitude [m]')
+    ax.set_ylim(ylim)
+    ax.legend(loc='best', frameon=False)
