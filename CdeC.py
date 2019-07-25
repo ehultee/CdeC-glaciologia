@@ -39,7 +39,7 @@ def read_run_results(gdir, filesuffix=None):
     ts.iloc[0:12*3] = ts.iloc[12*3]
     
     # Volume change
-    delta_vol = np.append([0], ds.volume_m3.data[1:] - ds.volume_m3.data[0:-1])
+    delta_vol = np.append(ds.volume_m3.data[1:] - ds.volume_m3.data[0:-1], [0])
     
     if ds.calendar_month[0] == 10 and gdir.cenlat < 0:
         # this is to cover up a bug in OGGM
