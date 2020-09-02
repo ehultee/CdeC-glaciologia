@@ -26,4 +26,4 @@ Particular focuses here are:
 * Which glacier characteristics determine how much ice a glacier stores?
 * How does climatic change affect glacial water storage?
 
-You can run the notebooks either on the dedicated Hub (orange button, for registered users only) or on MyBinder (blue button).
+Click the blue button above to launch the notebooks on MyBinder, no registration required.
